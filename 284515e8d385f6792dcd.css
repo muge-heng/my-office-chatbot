@@ -1,0 +1,387 @@
+:root {
+    /* Nebula Dark Theme (Default) */
+    --font-primary: 'Inter', sans-serif;
+    --font-accent: 'Orbitron', sans-serif;
+
+    --bg-primary-dark: #0d0f1a;
+    --bg-secondary-dark: #1a1c2d;
+    --bg-accent-dark: #2a2d47;
+    --bg-glass-dark: rgba(26, 28, 45, 0.6);
+
+    --text-primary-dark: #e0e7ff;
+    --text-secondary-dark: #a0a8c0;
+    --text-accent-dark: #82a9ff;
+    --text-glow-dark: #c2d9ff;
+
+    --border-dark: #3a3f63;
+    --border-accent-dark: #525880;
+
+    --header-bg-dark: linear-gradient(145deg, rgba(30,32,58,0.8) 0%, rgba(20,22,40,0.9) 100%);
+    
+    --my-message-bg-dark: linear-gradient(135deg, #5078f2, #6a82fb);
+    --my-message-text-dark: #ffffff;
+    --other-message-bg-dark: var(--bg-accent-dark);
+    --other-message-text-dark: var(--text-primary-dark);
+
+    --shadow-color-dark: rgba(0, 0, 0, 0.3);
+    --shadow-strong-dark: rgba(0,0,0, 0.5);
+    --shadow-glow-dark: rgba(130, 169, 255, 0.3);
+
+    --input-bg-dark: var(--bg-secondary-dark);
+    --input-focus-ring-dark: rgba(130, 169, 255, 0.4);
+
+    --success-dark: #2dd4bf;
+    --error-dark: #f47174;
+    --warning-dark: #fbbf24;
+    --prism-bg-dark: #1c1e29; /* Consistent dark background for Prism */
+
+
+    /* Stardust Light Theme */
+    --bg-primary-light: #f7f9fc;
+    --bg-secondary-light: #ffffff;
+    --bg-accent-light: #eef2f7;
+    --bg-glass-light: rgba(255, 255, 255, 0.7);
+
+    --text-primary-light: #1f2937;
+    --text-secondary-light: #6b7280;
+    --text-accent-light: #3b82f6;
+    --text-glow-light: #2563eb;
+
+    --border-light: #d1d8e0;
+    --border-accent-light: #b0b8c0;
+
+    --header-bg-light: linear-gradient(145deg, rgba(230,235,245,0.8) 0%, rgba(210,215,225,0.9) 100%);
+
+    --my-message-bg-light: var(--text-accent-light);
+    --my-message-text-light: #ffffff;
+    --other-message-bg-light: var(--bg-accent-light);
+    --other-message-text-light: var(--text-primary-light);
+
+    --shadow-color-light: rgba(100, 116, 139, 0.12);
+    --shadow-strong-light: rgba(100, 116, 139, 0.2);
+    --shadow-glow-light: rgba(59, 130, 246, 0.2);
+
+    --input-bg-light: var(--bg-secondary-light);
+    --input-focus-ring-light: rgba(59, 130, 246, 0.3);
+    
+    --success-light: #10b981;
+    --error-light: #ef4444;
+    --warning-light: #f59e0b;
+    --prism-bg-light: #f9fafb; /* Light background for Prism */
+}
+
+html {
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --bg-accent: var(--bg-accent-dark);
+    --bg-glass: var(--bg-glass-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --text-accent: var(--text-accent-dark);
+    --text-glow: var(--text-glow-dark);
+    --border-color: var(--border-dark);
+    --border-accent: var(--border-accent-dark);
+    --header-bg: var(--header-bg-dark);
+    --my-message-bg: var(--my-message-bg-dark);
+    --my-message-text: var(--my-message-text-dark);
+    --other-message-bg: var(--other-message-bg-dark);
+    --other-message-text: var(--other-message-text-dark);
+    --shadow-color: var(--shadow-color-dark);
+    --shadow-strong: var(--shadow-strong-dark);
+    --shadow-glow: var(--shadow-glow-dark);
+    --input-bg: var(--input-bg-dark);
+    --input-focus-ring: var(--input-focus-ring-dark);
+    --success-color: var(--success-dark);
+    --error-color: var(--error-dark);
+    --warning-color: var(--warning-dark);
+    --code-bg: var(--prism-bg-dark);
+    --reasoning-bg: rgba(130, 169, 255, 0.1); 
+    --reasoning-text: var(--text-accent-dark); 
+    --reasoning-border: var(--text-accent-dark);
+}
+
+html.light {
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --bg-accent: var(--bg-accent-light);
+    --bg-glass: var(--bg-glass-light);
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --text-accent: var(--text-accent-light);
+    --text-glow: var(--text-glow-light);
+    --border-color: var(--border-light);
+    --border-accent: var(--border-accent-light);
+    --header-bg: var(--header-bg-light);
+    --my-message-bg: var(--my-message-bg-light);
+    --my-message-text: var(--my-message-text-light);
+    --other-message-bg: var(--other-message-bg-light);
+    --other-message-text: var(--text-primary-light);
+    --shadow-color: var(--shadow-color-light);
+    --shadow-strong: var(--shadow-strong-light);
+    --shadow-glow: var(--shadow-glow-light);
+    --input-bg: var(--input-bg-light);
+    --input-focus-ring: var(--input-focus-ring-light);
+    --success-color: var(--success-light);
+    --error-color: var(--error-light);
+    --warning-color: var(--warning-light);
+    --code-bg: var(--prism-bg-light);
+    --reasoning-bg: rgba(59, 130, 246, 0.08); 
+    --reasoning-text: var(--text-accent-light); 
+    --reasoning-border: var(--text-accent-light);
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    overflow: hidden;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-accent { font-family: var(--font-accent); }
+
+.page {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 1; transform: perspective(1000px) translateZ(0); z-index: 1;
+}
+.page.hidden { opacity: 0; transform: perspective(1000px) translateZ(-100px) translateY(20px); pointer-events: none; z-index: 0; }
+.page.entering { opacity: 0; transform: perspective(1000px) translateZ(100px) translateY(-20px); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 10px var(--shadow-glow), 0 0 20px var(--shadow-glow); opacity: 0.8; }
+    50% { box-shadow: 0 0 15px var(--shadow-glow), 0 0 30px var(--shadow-glow); opacity: 1; }
+}
+@keyframes typing { 0% { content: '▋'; } 25% { content: '▋ '; } 50% { content: '▋  '; } 75% { content: '▋   '; } 100% { content: '▋'; } }
+
+.glassmorphism {
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+html.light .glassmorphism { border: 1px solid rgba(0,0,0,0.05); }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-accent); border-radius: 10px; border: 2px solid var(--bg-primary); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-accent); }
+
+#chatPage { background-color: var(--bg-primary); }
+.header {
+    padding: 0.75rem 1.25rem; background: var(--header-bg);
+    border-bottom: 1px solid var(--border-dark); box-shadow: 0 5px 20px var(--shadow-color); z-index: 10;
+}
+html.light .header { border-bottom: 1px solid var(--border-light); }
+.header h1 { font-family: var(--font-accent); letter-spacing: 1px; color: var(--text-glow); }
+.user-list-panel {
+    width: 280px; background-color: var(--bg-secondary); border-right: 1px solid var(--border-color);
+    padding: 1rem; box-shadow: inset -5px 0 15px -5px var(--shadow-color);
+    /* In a narrow task pane, this might be hidden by default */
+    display: none; 
+}
+@media (min-width: 640px) { /* Show sidebar on wider screens if desired */
+    .user-list-panel {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.user-list-panel h2 { color: var(--text-accent); font-family: var(--font-accent); border-bottom-color: var(--border-accent); }
+.user-list-item { transition: background-color 0.2s ease, transform 0.2s ease; }
+.user-list-item:hover { background-color: var(--bg-accent); transform: translateX(3px); }
+.user-list-item img { border: 2px solid transparent; transition: border-color 0.2s; }
+.user-list-item:hover img { border-color: var(--text-accent); }
+
+#messageArea { padding: 1.5rem; background-color: var(--bg-primary); }
+.message-bubble {
+    padding: 0.8rem 1.2rem; border-radius: 18px; box-shadow: 0 4px 12px var(--shadow-color);
+    max-width: 95%; /* Adjusted for narrow panes */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative; /* For action buttons */
+}
+.message-bubble:hover { transform: translateY(-2px); box-shadow: 0 6px 16px var(--shadow-color); }
+.message-bubble.my-message {
+    background: var(--my-message-bg); color: var(--my-message-text); border-bottom-right-radius: 6px;
+}
+.message-bubble.other-message {
+    background: var(--other-message-bg); color: var(--other-message-text); border-bottom-left-radius: 6px;
+}
+.message-text { font-size: 0.95rem; line-height: 1.7; /* Improved readability */ }
+
+/* Action buttons container for AI messages */
+.message-actions {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    display: flex;
+    gap: 4px;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    transform: translateY(5px);
+    pointer-events: none;
+    z-index: 5;
+}
+.message-bubble:hover .message-actions {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+.message-action-btn {
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-accent);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+.message-action-btn:hover {
+    background-color: var(--text-accent);
+    color: white;
+    border-color: var(--text-accent);
+}
+
+/* Code block specific styling for better rendering */
+.message-text pre {
+    background-color: var(--code-bg) !important; /* Override Prism theme for consistency */
+    border: 1px solid var(--border-accent);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    padding: 1em; /* Ensure padding */
+    margin: 1em 0;
+    overflow-x: auto; /* Horizontal scroll for long lines */
+    font-family: 'Fira Code', 'Courier New', monospace; /* Monospaced font */
+    font-size: 0.9em;
+    line-height: 1.6; /* Control line height within code blocks */
+    white-space: pre; /* Preserve all whitespace including multiple newlines */
+    position: relative; /* For action button */
+}
+.message-text pre code {
+    white-space: pre !important; /* Crucial for preserving newlines */
+    display: block; /* Ensure code takes full block */
+    line-height: inherit; /* Inherit from pre */
+}
+/* Prism line numbers plugin compatibility */
+.line-numbers .line-numbers-rows { padding-top: 1em !important; padding-bottom: 1em !important; }
+
+
+.message-text code:not(pre code) { /* Inline code */
+    background-color: color-mix(in srgb, var(--text-accent) 15%, transparent);
+    color: var(--text-accent); padding: 0.2em 0.45em; border-radius: 5px;
+    border: 1px solid color-mix(in srgb, var(--text-accent) 30%, transparent);
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85em;
+}
+.copy-code-button { 
+    background-color: rgba(200, 210, 255, 0.15) !important; 
+    border: 1px solid rgba(200, 210, 255, 0.25) !important; 
+    color: var(--text-glow) !important; 
+    position: absolute; /* Overriding Prism's default toolbar */
+    top: 8px;
+    right: 8px;
+}
+.copy-code-button:hover { background-color: rgba(200, 210, 255, 0.25) !important; }
+
+.reasoning-content {
+    background-color: var(--reasoning-bg); color: var(--reasoning-text);
+    border-left: 3px solid var(--reasoning-border); padding: 0.75rem 1rem; margin: 0.75rem 0;
+    border-radius: 0 8px 8px 0; font-size: 0.85em; opacity: 0.9;
+}
+.reasoning-content::before { font-weight: 600; color: var(--reasoning-text); }
+
+.message-input-area {
+    padding: 1rem 1.25rem; background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color); box-shadow: 0 -5px 20px var(--shadow-color);
+}
+#messageInput {
+    background-color: var(--input-bg); border: 1px solid var(--border-accent);
+    border-radius: 12px; padding: 0.8rem 1rem; padding-right: 4rem;
+    color: var(--text-primary); min-height: 50px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+#messageInput:focus {
+    border-color: var(--text-accent);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 0 0 3px var(--input-focus-ring);
+}
+#emojiButton { right: 0.8rem; top: 50%; transform: translateY(-50%); color: var(--text-secondary); }
+#emojiButton:hover { color: var(--text-accent); }
+#emojiPicker { border-radius: 12px; box-shadow: 0 8px 25px var(--shadow-strong); }
+
+.btn {
+    padding: 0.6rem 1.25rem; border-radius: 10px; font-weight: 600;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.8rem;
+}
+.btn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 4px 10px var(--shadow-color); }
+.btn:active { transform: translateY(0px) scale(0.98); }
+.btn-primary {
+    background: linear-gradient(135deg, var(--text-accent), color-mix(in srgb, var(--text-accent) 70%, #ff8ac5));
+    color: white; border: none;
+}
+.btn-primary:disabled { background: var(--border-accent); opacity: 0.6; color: var(--text-secondary); }
+.btn-secondary {
+    background-color: var(--bg-accent); color: var(--text-primary);
+    border: 1px solid var(--border-accent);
+}
+.btn-secondary:hover { background-color: color-mix(in srgb, var(--bg-accent) 80%, black); border-color: var(--text-accent); }
+.btn-danger { background-color: var(--error-color); color: white; border: none; }
+.icon-button { color: var(--text-secondary); font-size: 1.2rem; padding: 0.5rem; border-radius: 50%; }
+.icon-button:hover { color: var(--text-accent); background-color: var(--bg-accent); }
+.header .icon-button { color: var(--text-primary-dark); }
+html.light .header .icon-button { color: var(--text-primary-light); }
+.header .icon-button:hover { color: var(--text-accent); background-color: rgba(255,255,255,0.1); }
+html.light .header .icon-button:hover { background-color: rgba(0,0,0,0.05); }
+
+#settingsPage { background-color: var(--bg-primary); padding: 1.5rem 2rem; }
+#settingsPage h2 { font-family: var(--font-accent); color: var(--text-accent); font-size: 2.25rem; letter-spacing: 1px; }
+.settings-section {
+    background-color: var(--bg-secondary); padding: 1.75rem; border-radius: 16px;
+    box-shadow: 0 8px 25px var(--shadow-color); margin-bottom: 2.5rem;
+    border: 1px solid var(--border-color);
+}
+.settings-section-header {
+    font-family: var(--font-accent); font-size: 1.3rem; color: var(--text-primary);
+    border-bottom-color: var(--border-accent); padding-bottom: 0.8rem; margin-bottom: 1.5rem;
+}
+.settings-section-header i { color: var(--text-accent); }
+.form-group label { color: var(--text-secondary); font-weight: 500; font-size: 0.85rem; }
+.form-group input, .form-group select, .form-group textarea {
+    background-color: var(--input-bg); border: 1px solid var(--border-accent);
+    border-radius: 10px; padding: 0.75rem 1rem; color: var(--text-primary);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--text-accent);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), 0 0 0 3px var(--input-focus-ring);
+}
+.api-provider label { padding: 0.5rem 0.75rem; border-radius: 8px; transition: all 0.2s; }
+.api-provider input[type="radio"]:checked + svg + span, 
+.api-provider input[type="radio"]:checked + i + span { color: var(--text-accent); font-weight: 600; }
+.api-provider label:hover { background-color: var(--bg-accent); }
+.streaming-option input[type="checkbox"] { transform: scale(1.1); accent-color: var(--text-accent); }
+#darkModeToggle + div { background-color: var(--border-accent); }
+#darkModeToggle:checked + div { background-color: var(--text-accent); }
+
+#toastNotification {
+    border-radius: 12px; padding: 1rem 1.5rem;
+    box-shadow: 0 10px 30px var(--shadow-strong);
+    font-weight: 500; backdrop-filter: blur(5px);
+}
+#toastNotification.success { background-color: rgba(45, 212, 191, 0.8); color: #065f46; border: 1px solid var(--success-color); }
+html.light #toastNotification.success { color: white; }
+#toastNotification.error { background-color: rgba(244, 113, 116, 0.8); color: #7f1d1d; border: 1px solid var(--error-color); }
+html.light #toastNotification.error { color: white; }
+#toastNotification.warning { background-color: rgba(251, 191, 36, 0.8); color: #78350f; border: 1px solid var(--warning-color); }
+html.light #toastNotification.warning { color: white; }
+#toastNotification.info { background-color: rgba(130, 169, 255, 0.8); color: var(--bg-primary-dark); border: 1px solid var(--text-accent); }
+html.light #toastNotification.info { color: #1e3a8a; }
+
+.provider-icon { width: 1.2em; height: 1.2em; display: inline-block; vertical-align: middle; margin-right: 0.3em; }
